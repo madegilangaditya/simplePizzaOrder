@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <h2>Pizza</h2>
+            <form id="getPizza">
+                <div class="pizza-wrap col3">
+                    <img src="img\pizza1.JPG" alt="pizza1" srcset="">
+                    <h3>Pizza 1</h3>
+                    <p class="price">$8</p>
+                    <input type="radio" id="pizza1" name="pizza" class="pz-radio" value="8">
+                </div>
+                <div class="pizza-wrap col3">
+                    <img src="img\pizza2.JPG" alt="pizza1" srcset="">
+                    <h3>Pizza 2</h3>
+                    <p class="price">$10</p>
+                    <input type="radio" id="pizza2" name="pizza" class="pz-radio" value="10">
+                </div>
+                <div class="pizza-wrap col3">
+                    <img src="img\pizza3.JPG" alt="pizza1" srcset="">
+                    <h3>Pizza 3</h3>
+                    <p class="price">$12</p>
+                    <input type="radio" id="pizza3" name="pizza" class="pz-radio" value="12">
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <h2>Size</h2>
+            <form id="getPizzaSize">
+                <div class="col3">
+                    <input type="radio" id="size1" name="size" class="pz-radio size" value="sm">
+                    <label for="small" class="size-label">Small</label>
+                </div>
+                <div class="col3">
+                    <input type="radio" id="size2" name="size" class="pz-radio size" value="md" checked>
+                    <label for="medium" class="size-label">Medium</label>
+                </div>
+                <div class="col3">
+                    <input type="radio" id="size3" name="size" class="pz-radio size" value="lg">
+                    <label for="large" class="size-label">Large</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <h2>Toppings</h2>
+            <form id="getPizzaToppings">
+                <div class="col3 val1">
+                    <div class="toping-group">
+                        <input type="checkbox" id="avocado" name="topping" class="pz-topping" value="1">
+                        <label for="Topping">Avocado</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="brocoli" name="topping" class="pz-topping" value="1">
+                        <label for="Topping">Brocoli</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="onions" name="topping" class="pz-topping" value="1">
+                        <label for="Topping">Onions</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="zucchini" name="topping" class="pz-topping" value="1">
+                        <label for="Topping">Zucchini</label>
+                    </div>
+                </div>
+                <div class="col3 val2">
+                    <div class="toping-group">
+                        <input type="checkbox" id="lobster" name="topping" class="pz-topping" value="2">
+                        <label for="Topping">Lobster</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="oyster" name="topping" class="pz-topping" value="2">
+                        <label for="Topping">Oyster</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="salmon" name="topping" class="pz-topping" value="2">
+                        <label for="Topping">Salmon</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="tuna" name="topping" class="pz-topping" value="2">
+                        <label for="Topping">Tuna</label>
+                    </div>
+                </div>
+                <div class="col3 val3">
+                    <div class="toping-group">
+                        <input type="checkbox" id="bacon" name="topping" class="pz-topping" value="3">
+                        <label for="Topping">Bacon</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="duck" name="topping" class="pz-topping" value="3">
+                        <label for="Topping">Duck</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="ham" name="topping" class="pz-topping" value="3">
+                        <label for="Topping">Ham</label>
+                    </div>
+                    <div class="toping-group">
+                        <input type="checkbox" id="sausage" name="topping" class="pz-topping" value="3">
+                        <label for="Topping">Sausage</label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <h2>Price</h2>
+                <p id="price">$0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
